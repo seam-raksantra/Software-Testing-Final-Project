@@ -16,6 +16,11 @@ class Movie extends Model
         'poster',
         'trailer',
         'release_date',
+        'image',
+    ];
+
+    protected $casts = [
+        'release_date' => 'date',
     ];
 
     public function genres()
